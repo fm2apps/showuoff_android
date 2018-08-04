@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/image80"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin5"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cat_image"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/image60"
+        android:layout_height="@dimen/image60"
+        android:scaleType="centerCrop"
+        android:src="@drawable/noimage" />
+
+    <TextView
+        android:id="@+id/cat_name"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin5"
+        android:text="Movies"
+        android:textColor="@color/black" />
+
+</LinearLayout>

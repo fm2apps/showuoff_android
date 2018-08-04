@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/photo_editor_sdk_image_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/profile_imagee"
+        android:layout_width="@dimen/image120"
+        android:layout_height="@dimen/image120"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        fresco:roundAsCircle="true"
+        fresco:roundedCornerRadius="5dp"
+        fresco:roundingBorderColor="@color/gray_number"
+        fresco:roundingBorderWidth="0dp" />
+
+</RelativeLayout>

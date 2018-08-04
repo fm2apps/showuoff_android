@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/award_image_set"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin110"
+        android:layout_margin="@dimen/margin2"
+        android:scaleType="fitXY"
+        android:src="@drawable/noimage"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/video_image"
+        android:layout_width="@dimen/margin30"
+        android:layout_height="@dimen/margin30"
+        android:src="@drawable/play_button"/>
+
+</RelativeLayout>

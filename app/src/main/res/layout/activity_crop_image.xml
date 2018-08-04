@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Croping.CropImage">
+
+    <include layout="@layout/drawer_toolbar"/>
+
+    <FrameLayout
+        android:id="@+id/top_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.fenchtose.nocropper.CropperView
+            android:background="@color/black"
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:nocropper__grid_opacity="0.8"
+            app:nocropper__grid_thickness="0.8dp"
+            app:nocropper__padding_color="@color/black"
+            app:nocropper__grid_color="@color/black" />
+
+        <ImageView
+            android:id="@+id/snap_button"
+            android:layout_width="@dimen/image35"
+            android:layout_height="@dimen/image35"
+            android:layout_margin="@dimen/margin10"
+            android:padding="@dimen/padding7"
+            android:layout_gravity="left|bottom"
+            android:scaleType="center"
+            android:src="@drawable/ic_crop_free_white_24dp"/>
+
+        <ImageView
+            android:id="@+id/rotate_button"
+            android:layout_width="@dimen/image35"
+            android:layout_height="@dimen/image35"
+            android:padding="@dimen/padding7"
+            android:layout_margin="@dimen/margin10"
+            android:layout_gravity="right|bottom"
+            android:scaleType="center"
+            android:src="@drawable/ic_rotate_right_white_24dp"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/save_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin30"
+        android:layout_marginStart="@dimen/margin30"
+        android:layout_marginTop="@dimen/margin50"
+        android:background="@drawable/corner_background3"
+        android:gravity="center"
+        android:padding="@dimen/padding15"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_text" />
+
+</LinearLayout>

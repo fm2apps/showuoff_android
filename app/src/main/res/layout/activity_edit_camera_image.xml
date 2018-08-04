@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mediadata.EditCameraImage">
+
+    <include layout="@layout/drawer_toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:keepScreenOn="true">
+
+            <app.shouoff.faceFilter.CameraSourcePreview
+                android:id="@+id/preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/image"/>
+
+            <app.shouoff.faceFilter.GraphicOverlay
+                android:id="@+id/faceOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/click_image"
+            android:src="@drawable/circle_shape_outline"
+            android:layout_marginBottom="@dimen/margin10"
+            android:layout_width="@dimen/margin45"
+            android:layout_height="@dimen/margin45"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/filter_list"/>
+
+        <ImageView
+            android:id="@+id/reverse"
+            android:src="@drawable/switch_cameras"
+            android:layout_marginBottom="@dimen/margin10"
+            android:layout_width="@dimen/margin45"
+            android:layout_height="@dimen/margin45"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_above="@+id/filter_list"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/filter_list"
+        android:background="#5AA0A0A0"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

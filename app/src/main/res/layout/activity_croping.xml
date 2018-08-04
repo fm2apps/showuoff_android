@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_croping"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/padding15"
+            android:text="Cancel"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/heading_text" />
+
+        <TextView
+            android:id="@+id/title_in_business_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical|center"
+            android:maxLines="1"
+            android:text="Crop Image"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/heading_text" />
+
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/padding15"
+            android:text="Save"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/heading_text" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+        <com.isseiaoki.simplecropview.CropImageView
+            android:id="@+id/cropImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="@dimen/margin5"
+            android:paddingRight="@dimen/margin5"
+            custom:scv_background_color="@color/black"
+            custom:scv_frame_color="@color/colorAccent"
+            custom:scv_guide_color="@color/colorAccent"
+            custom:scv_guide_show_mode="not_show"
+            custom:scv_guide_stroke_weight="1dp"
+            custom:scv_handle_show_mode="show_always"
+            custom:scv_handle_size="7dp"
+            custom:scv_overlay_color="@color/black"
+            custom:scv_touch_padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonRotateLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/padding10"
+                android:src="@drawable/ic_rotate_left_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/buttonRotateRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/padding10"
+                android:src="@drawable/ic_rotate_right_black_24dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

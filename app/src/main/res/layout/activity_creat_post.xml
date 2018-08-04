@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_creat_post"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="?attr/actionBarSize"
+    android:paddingTop="?attr/actionBarSize"
+    tools:context="app.shouoff.activity.CreatPost">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_attachment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/thumb_nail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image300"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/noimage" />
+
+                <ImageView
+                    android:id="@+id/gif_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/noimage" />
+
+                <ImageView
+                    android:id="@+id/post_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/noimage" />
+
+                <ImageView
+                    android:id="@+id/video_view"
+                    android:layout_width="@dimen/image50"
+                    android:layout_height="@dimen/image50"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/play"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/delete"
+                    android:layout_width="@dimen/margin30"
+                    android:layout_height="@dimen/margin30"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/margin5"
+                    android:src="@drawable/delete" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding7">
+
+                <app.shouoff.widget.Multi
+                    android:id="@+id/post_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_marginRight="@dimen/margin5"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:background="@drawable/simple_corner"
+                    android:dropDownHeight="200dp"
+                    android:gravity="start"
+                    android:hint="@string/add_description"
+                    android:inputType="textMultiLine|text"
+                    android:minLines="2"
+                    android:padding="@dimen/padding9"
+                    android:scrollbars="vertical"
+                    android:textSize="@dimen/heading_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin5"
+                        android:text="Disclaimer"
+                        android:textColor="@color/gray_number"
+                        android:textSize="@dimen/normal_text"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin5"
+                        android:text="- Your Post should be related to a Junior under 16"
+                        android:textColor="@color/gray_number"
+                        android:textSize="@dimen/small_text" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin5"
+                        android:text="- The picture will be public on the app and this disclaimer is against the law"
+                        android:textColor="@color/gray_number"
+                        android:textSize="@dimen/small_text"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/submit_post"
+                    style="@style/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin35"
+                    android:layout_marginRight="@dimen/margin35"
+                    android:layout_marginTop="@dimen/margin20"
+                    android:background="@drawable/white_corner_background4"
+                    android:gravity="center"
+                    android:padding="@dimen/padding12"
+                    android:text="Share"
+                    android:textColor="@color/white" />
+
+                <RelativeLayout
+                    android:id="@+id/start_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/image20"
+                    android:visibility="gone">
+
+                    <ProgressBar
+                        android:id="@+id/myProgress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="@dimen/margin100"
+                        android:layout_height="@dimen/margin100"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progressDrawable="@drawable/progressbar_drawable" />
+
+                    <TextView
+                        android:id="@+id/progress_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="@dimen/padding5"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

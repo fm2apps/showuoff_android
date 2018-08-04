@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawable_white_radius"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin5"
+        android:padding="@dimen/padding15"
+        android:text="@string/v_choose_video"
+        android:textColor="@color/black"
+        android:textSize="@dimen/heading_text"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray_text" />
+
+    <TextView
+        android:id="@+id/take_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin10"
+        android:padding="@dimen/padding15"
+        android:text="@string/make_video"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/from_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin5"
+        android:layout_marginLeft="@dimen/margin10"
+        android:padding="@dimen/padding15"
+        android:text="@string/from_your_device_s_gallery"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_text"
+        android:textStyle="bold" />
+
+</LinearLayout>

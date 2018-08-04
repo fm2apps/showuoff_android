@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutrel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_color">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:title="About Us" />
+
+    <ImageView
+        android:id="@+id/toolbar_image"
+        android:layout_width="@dimen/margin25"
+        android:layout_height="@dimen/margin25"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin10"
+        android:src="@drawable/back_arrow"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin10"
+        android:layout_toEndOf="@+id/toolbar_image"
+        android:textSize="@dimen/heading_text"
+        android:visibility="gone" />
+
+</RelativeLayout>

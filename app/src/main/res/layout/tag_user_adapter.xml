@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding7">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/image40"
+        android:layout_height="@dimen/image40"
+        android:scaleType="centerCrop"
+        android:src="@drawable/noimage" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/margin10"
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/profile_image"
+        android:text="John Smith"
+        android:textColor="@color/gray_text"
+        android:textSize="@dimen/small_text"/>
+
+</RelativeLayout>

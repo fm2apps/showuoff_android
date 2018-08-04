@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".appsettings.DeleteAccount">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding15">
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="@dimen/margin22"
+            android:layout_height="@dimen/margin22"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin10"
+            android:text="Delete Account"
+            android:textColor="@color/black"
+            android:textSize="@dimen/toolbar_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#2bd2d1d1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin15"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/margin5"
+            app:cardElevation="@dimen/margin2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding12">
+
+                <TextView
+                    android:text="DELETE YOUR ACCOUNT:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:textColor="@color/red_color"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/heading_text"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:text="- All Your posts and profile will be Erased and no chance to restore it again."
+                    android:textColor="@color/gray_number"
+                    android:textSize="@dimen/small_text" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:text="- Your ShowUoff Account will be deleted permanently from the App."
+                    android:textColor="@color/gray_number"
+                    android:textSize="@dimen/small_text" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:text="- All Your Winning Posts will be erased from the App permanently."
+                    android:textColor="@color/gray_number"
+                    android:textSize="@dimen/small_text" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin15"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/margin5"
+            app:cardElevation="@dimen/margin2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding12">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:text="To delete your account, confirm your password."
+                    android:textColor="@color/gray_number"
+                    android:textSize="@dimen/heading_text" />
+
+                <EditText
+                    android:id="@+id/password"
+                    style="@style/edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:inputType="textPassword"
+                    android:textColor="@color/gray_text"
+                    android:textSize="@dimen/heading_text" />
+
+                <TextView
+                    android:id="@+id/deleteAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin25"
+                    android:background="@color/red_color"
+                    android:gravity="center"
+                    android:padding="@dimen/margin15"
+                    android:text="DELETE MY ACCOUNT"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

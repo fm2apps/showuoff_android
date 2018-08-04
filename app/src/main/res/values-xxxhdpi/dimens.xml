@@ -1,0 +1,108 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="margin1">1dp</dimen>
+    <dimen name="margin2">2dp</dimen>
+    <dimen name="margin3">3dp</dimen>
+    <dimen name="margin4">4dp</dimen>
+    <dimen name="margin5">5dp</dimen>
+    <dimen name="margin8">8dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="margin12">12dp</dimen>
+    <dimen name="margin14">14dp</dimen>
+    <dimen name="margin15">15dp</dimen>
+    <dimen name="margin17">17dp</dimen>
+    <dimen name="margin19">19dp</dimen>
+    <dimen name="margin20">20dp</dimen>
+    <dimen name="margin22">22dp</dimen>
+    <dimen name="margin25">25dp</dimen>
+    <dimen name="margin27">27dp</dimen>
+    <dimen name="margin30">30dp</dimen>
+    <dimen name="margin35">35dp</dimen>
+    <dimen name="margin40">40dp</dimen>
+    <dimen name="margin43">43dp</dimen>
+
+    <dimen name="margin45">45dp</dimen>
+    <dimen name="margin50">50dp</dimen>
+    <dimen name="margin55">55dp</dimen>
+    <dimen name="margin60">60dp</dimen>
+    <dimen name="margin65">65dp</dimen>
+    <dimen name="margin80">80dp</dimen>
+    <dimen name="margin100">100dp</dimen>
+    <dimen name="margin110">110dp</dimen>
+    <dimen name="margin120">120dp</dimen>
+
+    <dimen name="margin130">130dp</dimen>
+    <dimen name="margin140">140dp</dimen>
+    <dimen name="margin150">150dp</dimen>
+    <dimen name="margin160">160dp</dimen>
+    <dimen name="margin180">180dp</dimen>
+    <dimen name="margin200">200dp</dimen>
+    <dimen name="margin250">250dp</dimen>
+    <dimen name="margin230">230dp</dimen>
+    <dimen name="margin270">270dp</dimen>
+    <dimen name="margin300">300dp</dimen>
+
+    <dimen name="heading_text">15sp</dimen>
+    <dimen name="normal_text">14sp</dimen>
+    <dimen name="small_text">13sp</dimen>
+    <dimen name="short_text">12sp</dimen>
+    <dimen name="short_text_11">11sp</dimen>
+    <dimen name="short_text_10">10dp</dimen>
+    <dimen name="short_text_9">9sp</dimen>
+    <dimen name="toolbar_text">17sp</dimen>
+    <dimen name="button_text">17sp</dimen>
+
+    <dimen name="padding5">5dp</dimen>
+    <dimen name="padding4">4dp</dimen>
+    <dimen name="padding3">3dp</dimen>
+    <dimen name="padding7">7dp</dimen>
+    <dimen name="padding9">9dp</dimen>
+    <dimen name="padding12">12dp</dimen>
+    <dimen name="padding10">10dp</dimen>
+    <dimen name="padding15">15dp</dimen>
+    <dimen name="padding17">17dp</dimen>
+    <dimen name="padding20">20dp</dimen>
+    <dimen name="padding22">22dp</dimen>
+    <dimen name="padding25">25dp</dimen>
+
+    <dimen name="image">10dp</dimen>
+    <dimen name="image12">12dp</dimen>
+    <dimen name="image15">15dp</dimen>
+    <dimen name="image17">17dp</dimen>
+    <dimen name="image20">20dp</dimen>
+    <dimen name="image25">25dp</dimen>
+    <dimen name="image30">30dp</dimen>
+    <dimen name="image35">35dp</dimen>
+    <dimen name="image40">40dp</dimen>
+    <dimen name="image50">50dp</dimen>
+    <dimen name="image60">60dp</dimen>
+    <dimen name="image80">80dp</dimen>
+    <dimen name="image100">100dp</dimen>
+    <dimen name="image120">120dp</dimen>
+    <dimen name="image130">130dp</dimen>
+    <dimen name="image140">140dp</dimen>
+    <dimen name="image150">150dp</dimen>
+    <dimen name="image170">170dp</dimen>
+    <dimen name="image200">200dp</dimen>
+    <dimen name="image220">220dp</dimen>
+    <dimen name="image250">250dp</dimen>
+    <dimen name="image300">300dp</dimen>
+    <dimen name="image320">320dp</dimen>
+    <dimen name="image330">330dp</dimen>
+    <dimen name="image340">340dp</dimen>
+    <dimen name="image350">350dp</dimen>
+    <dimen name="image360">380dp</dimen>
+
+    <dimen name="negative_margin10">-10dp</dimen>
+    <dimen name="negative_margin8">-8dp</dimen>
+    <dimen name="negative_margin6">-6dp</dimen>
+    <dimen name="negative_margin5">-5dp</dimen>
+    <dimen name="negative_margin4">-4dp</dimen>
+    <dimen name="negative_margin3">-3dp</dimen>
+    <dimen name="negative_margin2">-2dp</dimen>
+
+
+</resources>

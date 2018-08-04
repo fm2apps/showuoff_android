@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "866489417496",
+    "firebase_url": "https://shouoff-576c7.firebaseio.com",
+    "project_id": "shouoff-576c7",
+    "storage_bucket": "shouoff-576c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866489417496:android:e87e366baf1f134c",
+        "android_client_info": {
+          "package_name": "app.shouoff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866489417496-jrl91ojhu6qo38hmior9a75heo7auep2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6wtwTPDY67Uzw9_Ec9danh2RLjr_XW84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

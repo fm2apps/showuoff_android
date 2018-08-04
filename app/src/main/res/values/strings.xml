@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">showUoff</string>
+    <string name="interstitial_full_screen">ca-app-pub-1513347661790624/6339333794</string>
+    <string name="admob_app_id">ca-app-pub-1513347661790624~7070690488</string>
+
+    <!--Normal Texts-->
+    <string name="fans">Fans</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="posts1">POSTS</string>
+    <string name="fans1">FANS</string>
+    <string name="contasts1">CONTESTS</string>
+    <string name="search_users">Search Users</string>
+    <string name="upload_and_share">UPLOAD AND SHARE</string>
+    <string name="add_description">Say something about this photo</string>
+    <string name="submit">Submit</string>
+    <string name="discovery">Discover</string>
+    <string name="more">More</string>
+    <string name="profile">Profile</string>
+    <string name="monthely_awards">MONTHELY AWARDS</string>
+    <string name="nike_air_cruz_trainer">Nike Air Cruz Trainer</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="your_best_moment">YOUR BEST MOMENT</string>
+    <string name="ok">OK</string>
+    <string name="view_more"><u>View More</u></string>
+    <string name="view_post"><u>View post</u></string>
+
+    <!--Error Messages-->
+    <string name="Connection_Time_Out">Looks like something is incorrect!\nRetry Later.</string>
+    <string name="sorry">Oops!</string>
+
+    <!--Validations-->
+    <string name="v_password_short">Password Is Too Short</string>
+    <string name="v_number_not_valid">Number Not Less Than 14 Digits</string>
+    <string name="v_enter_email">Enter Valid Email Address</string>
+    <string name="v_email_not_valid">Email Address Not Valid</string>
+    <string name="v_enter_password">Enter Your Password</string>
+    <string name="v_enter_confirm_password">Enter Confirm Password</string>
+    <string name="v_enter_name">Enter Your Full Name</string>
+    <string name="v_enter_family_name">Enter Your Last Name</string>
+    <string name="v_select_dob">Select Your Date Of Birth</string>
+    <string name="v_enter_your_nick_name">Enter Your Nick Name</string>
+    <string name="v_enter_your_school_name">Select Your School Name</string>
+    <string name="v_enter_your_game">Enter Your Favourites Games</string>
+    <string name="v_choose_country">Select Your Country</string>
+    <string name="v_choose_city">Select Your City</string>
+    <string name="v_enter_username">Enter Your Username</string>
+    <string name="v_not_match">Password Not Match</string>
+    <string name="v_father_name">Enter Your Father Name</string>
+    <string name="v_select_gender">Select Your Gender</string>
+    <string name="v_contect">Enter Contact Number</string>
+    <string name="choose_profile_picture">Choose profile picture</string>
+    <string name="take_a_new_photo">Take a new photo</string>
+    <string name="from_your_device_s_gallery">From your device\'s gallery</string>
+
+    <!--Success Message-->
+    <string name="success_regiester">Account Create Successfully</string>
+    <string name="success_login">Account Login Successfully</string>
+    <string name="success_forgot">Reset Code Sent To Your Email ID Successfully</string>
+    <string name="update_success">Profile Update Successfully</string>
+    <string name="create_post">Create Post</string>
+    <string name="v_choose_video">Choose Video</string>
+    <string name="make_video">Make a new video</string>
+    <string name="search_data">Search Users</string>
+    <string name="no_data">Users Not Found As Per Your Search Criteria</string>
+
+    <!--Time formats-->
+    <string name="time_just_now">Just now</string>
+    <string name="time_minute_ago">a minute ago</string>
+    <string name="time_min_ago">Minutes ago</string>
+    <string name="time_an_hr_ago">An hour ago</string>
+    <string name="time_hr_ago">Hours ago</string>
+    <string name="time_yesterday">Yesterday</string>
+    <string name="time_day_ago">Days ago</string>
+    <string name="time_today">Today</string>
+    <string name="content_about">About Us</string>
+    <string name="sure_to_delete">Are you sure you want to delete this comment</string>
+
+    <!--Photo Filter-->
+    <string name="title_activity_photo_editor">PhotoEditorActivity</string>
+    <string name="done">Done</string>
+    <string name="save">Save</string>
+    <string name="clear_all">Clear All</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="upload_dialog_title">Upload Image</string>
+    <string name="upload_picker_title">Select Picture</string>
+    <string name="directory_create_fail">Failed to create directory</string>
+    <string name="access_media_permissions_msg">To attach photos, we need to access media on your device</string>
+    <string name="continue_txt">Continue</string>
+    <string name="not_now">NOT NOW</string>
+    <string name="media_access_denied_msg">You denied storage access, no photos will be added.</string>
+
+    <!--Icons codes-->
+    <string name="ic_close">"\ue918"</string>
+    <string name="ic_text">"\ue945"</string>
+    <string name="ic_draw">""\ue944</string>
+    <string name="ic_images">"\ue949"</string>
+    <string name="ic_save">"\ue946"</string>
+    <string name="ic_clear_all">"\ue947"</string>
+    <string name="ic_continue">"\ue948"</string>
+    <string name="ic_delete">"\ue92c"</string>
+
+
+    <!--Normal Text-->
+    <string name="choose_from_gallery">Choose From Gallery</string>
+    <string name="choose_from_camera">Choose From Camera</string>
+    <string name="undo">Undo</string>
+    <string name="erase">Erase</string>
+    <string name="delete_post">Are you sure you want to delete Post</string>
+    <string name="report_post">Report this post</string>
+    <string name="not_alow_to_give_comment">Not allowed to give comment please remove offensive words</string>
+    <string name="no_post_added_by_you">Currently no post added by you please make new post</string>
+    <string name="no_admires_you">Currently you have no fans</string>
+    <string name="no_contest_participated">You didn\'t participated in any Contest</string>
+    <string name="terms"><![CDATA[Terms & Conditions]]></string>
+    <string name="not_notif">No Notifications</string>
+    <string name="comment">Post Comments</string>
+    <string name="gender">Gender</string>
+    <string name="create_username">Create Username</string>
+    <string name="create_new_password">Create New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="next">Next</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="your_favourite_sports">Your Favourite Sports</string>
+    <string name="sports">Sports</string>
+    <string name="step_2_create_your_login_keys">Step 2: Create your login keys</string>
+    <string name="register">Register</string>
+    <string name="todo">TODO</string>
+    <string name="step_1_your_basic_details">Step 1: Your basic details</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="tell_us_your_nick_name">Tell us your nick name</string>
+    <string name="guardian_name">Guardian Name</string>
+    <string name="guardian_e_mail">Guardian E-mail</string>
+    <string name="guardian_contact">Guardian Contact</string>
+    <string name="about_me">About Me</string>
+    <string name="policy">Privacy Policy</string>
+    <string name="logout_account">Are you sure to logout your account</string>
+    <string name="discover">Discover</string>
+    <string name="my_post">Posts</string>
+    <string name="posts">Posts</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="my_fans">Fans</string>
+    <string name="no_posts_found">No Posts Found</string>
+    <string name="people_who_liked">People who liked</string>
+
+</resources>

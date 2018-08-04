@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_creat_post"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="?attr/actionBarSize"
+    android:paddingTop="?attr/actionBarSize"
+    tools:context="app.shouoff.activity.EditPost">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding7">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10" />
+
+            <EditText
+                android:id="@+id/edit_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin25"
+                android:layout_marginRight="@dimen/margin25"
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@drawable/simple_corner"
+                android:gravity="top"
+                android:hint="@string/add_description"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:padding="@dimen/padding9"
+                android:textSize="@dimen/heading_text" />
+
+            <TextView
+                android:id="@+id/submit_post"
+                style="@style/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin35"
+                android:layout_marginRight="@dimen/margin35"
+                android:layout_marginTop="@dimen/margin20"
+                android:background="@drawable/white_corner_background4"
+                android:gravity="center"
+                android:padding="@dimen/padding12"
+                android:text="@string/submit"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

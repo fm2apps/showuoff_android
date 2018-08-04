@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/app_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:typeface">monospace</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="textview" parent="@android:style/TextAppearance.Widget.EditText">
+        <item name="android:textSize">@dimen/normal_text</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <style name="NavigationView" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:textSize">@dimen/button_text</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:colorActivatedHighlight">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlNormal">@android:color/white</item>
+
+    </style>
+
+    <style name="custom_alert_dialog">
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="TextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/small_text</item>
+    </style>
+
+    <style name="edit_text" parent="@android:style/TextAppearance.Widget.EditText">
+        <item name="android:textSize">@dimen/heading_text</item>
+        <item name="android:textColor">@color/dark_color</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <!--style for button-->
+    <style name="button" parent="@android:style/TextAppearance.Widget.Button">
+        <item name="android:textSize">@dimen/button_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!--style for edit text-->
+    <style name="edit_text_snd" parent="@android:style/TextAppearance.Widget.EditText">
+        <item name="android:textSize">@dimen/heading_text</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <style name="Autocomplete">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/gray_text</item>
+        <item name="colorControlNormal">@color/gray_text</item>
+        <item name="colorControlActivated">@color/gray_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/heading_text</item>
+    </style>
+
+    <style name="Color1SwitchStyle">
+        <item name="colorControlActivated">@color/app_color</item>
+
+    </style>
+
+</resources>

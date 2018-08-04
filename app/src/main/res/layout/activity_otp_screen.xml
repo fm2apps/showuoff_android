@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_otp_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.shouoff.login.OtpScreen">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding10">
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="@dimen/margin22"
+            android:layout_height="@dimen/margin22"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin10"
+            android:text="Account Verification"
+            android:textColor="@color/black"
+            android:textSize="@dimen/toolbar_text" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo_img"
+        android:layout_width="@dimen/image200"
+        android:layout_height="@dimen/image100"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/image60"
+        android:src="@drawable/app_new_logo" />
+
+    <TextView
+        android:id="@+id/heading"
+        style="@style/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_img"
+        android:layout_marginTop="@dimen/margin40"
+        android:gravity="center"
+        android:text="Enter 6 digits code"
+        android:textSize="@dimen/toolbar_text"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/otp_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="@dimen/margin30"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/one"
+                android:layout_width="@dimen/margin40"
+                android:layout_height="@dimen/margin40"
+                android:background="@drawable/rectangal_drawable_snd"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:padding="@dimen/margin8"
+                android:singleLine="true"
+                android:textSize="@dimen/toolbar_text" />
+
+            <EditText
+                android:id="@+id/two"
+                android:layout_width="@dimen/margin40"
+                android:layout_height="@dimen/margin40"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@drawable/rectangal_drawable_snd"
+                android:cursorVisible="false"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:padding="@dimen/margin8"
+                android:singleLine="true"
+                android:textSize="@dimen/toolbar_text" />
+
+            <EditText
+                android:id="@+id/three"
+                android:layout_width="@dimen/margin40"
+                android:layout_height="@dimen/margin40"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@drawable/rectangal_drawable_snd"
+                android:cursorVisible="false"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:padding="@dimen/margin8"
+                android:singleLine="true"
+                android:textSize="@dimen/toolbar_text" />
+
+            <EditText
+                android:id="@+id/four"
+                android:layout_width="@dimen/margin40"
+                android:layout_height="@dimen/margin40"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@drawable/rectangal_drawable_snd"
+                android:cursorVisible="false"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:padding="@dimen/margin8"
+                android:singleLine="true"
+                android:textSize="@dimen/toolbar_text" />
+
+            <EditText
+                android:id="@+id/five"
+                android:layout_width="@dimen/margin40"
+                android:layout_height="@dimen/margin40"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@drawable/rectangal_drawable_snd"
+                android:cursorVisible="false"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:padding="@dimen/margin8"
+                android:singleLine="true"
+                android:textSize="@dimen/toolbar_text" />
+
+            <EditText
+                android:id="@+id/six"
+                android:layout_width="@dimen/margin40"
+                android:layout_height="@dimen/margin40"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@drawable/rectangal_drawable_snd"
+                android:cursorVisible="false"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:padding="@dimen/margin8"
+                android:singleLine="true"
+                android:textSize="@dimen/toolbar_text" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/seven"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rectangal_drawable_snd"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="@dimen/padding7"
+            android:password="true"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submit_btn"
+        android:layout_width="@dimen/margin100"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otp_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin45"
+        android:background="@drawable/corner_background3"
+        android:gravity="center"
+        android:padding="@dimen/padding15"
+        android:text="Verify"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_text" />
+
+</RelativeLayout>

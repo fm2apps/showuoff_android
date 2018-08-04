@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding10">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/image50"
+            android:layout_height="@dimen/image50"
+            android:src="@drawable/noimage" />
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/margin5"
+            android:layout_toLeftOf="@+id/delete_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_toRightOf="@+id/image"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Smith"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text" />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin4"
+                android:autoLink="web"
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Great"
+                android:textColor="@color/dark_color"
+                android:textSize="@dimen/small_text" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_below="@+id/date"
+            android:id="@+id/delete_comment"
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/image20"
+            android:layout_height="@dimen/image20"
+            android:src="@drawable/dustbin"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="4 min ago"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/short_text_11" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_text" />
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_tick"
+        android:icon="@drawable/more_white_new"
+        android:orderInCategory="100"
+        android:title="Data"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/filter"
+                android:title="Filter" />
+
+            <item
+                android:id="@+id/search"
+                android:title="Search" />
+        </menu>
+
+    </item>
+
+</menu>

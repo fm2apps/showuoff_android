@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/main_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin100"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin30"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image_drawer"
+                    android:layout_width="@dimen/margin80"
+                    android:layout_height="@dimen/margin80"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:src="@drawable/noimage"
+                    app:civ_border_color="@color/app_color"
+                    app:civ_border_width="@dimen/margin2" />
+
+                <TextView
+                    android:id="@+id/drawer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin8"
+                    android:layout_toRightOf="@+id/profile_image_drawer"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin5"
+                    android:text="John Austin"
+                    android:layout_marginRight="@dimen/margin4"
+                    android:textColor="@color/gray_text"
+                    android:textSize="@dimen/heading_text" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/search_view"
+                        android:layout_width="@dimen/margin5"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_color"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/search_user_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin35"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding15">
+
+                        <ImageView
+                            android:id="@+id/searchuser_icon"
+                            android:layout_width="@dimen/margin20"
+                            android:layout_height="@dimen/margin20"
+                            android:src="@drawable/search" />
+
+                        <TextView
+                            android:id="@+id/search_user"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin15"
+                            android:text="Search Users"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/heading_text" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/profile_view"
+                        android:layout_width="@dimen/margin5"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_color"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/my_profile_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin35"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding15">
+
+                        <ImageView
+                            android:id="@+id/my_profile_icon"
+                            android:layout_width="@dimen/margin20"
+                            android:layout_height="@dimen/margin20"
+                            android:layout_gravity="center"
+                            android:src="@drawable/user" />
+
+                        <TextView
+                            android:id="@+id/my_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin15"
+                            android:text="My Profile"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/heading_text" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/post_view"
+                        android:layout_width="@dimen/margin5"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_color"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/my_posts_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin35"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding15">
+
+                        <ImageView
+                            android:id="@+id/my_post_icon"
+                            android:layout_width="@dimen/margin20"
+                            android:layout_height="@dimen/margin20"
+                            android:layout_gravity="center"
+                            android:src="@drawable/document" />
+
+                        <TextView
+                            android:id="@+id/my_post"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin15"
+                            android:text="My Posts"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/heading_text" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/liked_view"
+                        android:layout_width="@dimen/margin5"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_color"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/highly_liked_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin35"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding15">
+
+                        <ImageView
+                            android:id="@+id/highly_liked_icon"
+                            android:layout_width="@dimen/margin20"
+                            android:layout_height="@dimen/margin20"
+                            android:src="@drawable/trophyblack" />
+
+                        <TextView
+                            android:id="@+id/highly_liked"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin15"
+                            android:text="Daily Highly Liked"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/heading_text" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/contests_view"
+                        android:layout_width="@dimen/margin5"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_color"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/contest_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin35"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding15">
+
+                        <ImageView
+                            android:id="@+id/contest_icon"
+                            android:layout_width="@dimen/margin20"
+                            android:layout_height="@dimen/margin20"
+                            android:src="@drawable/contests" />
+
+                        <TextView
+                            android:id="@+id/contest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin15"
+                            android:text="Top 100"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/heading_text" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/winner_view"
+                        android:layout_width="@dimen/margin5"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_color"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/winner_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin35"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding15">
+
+                        <ImageView
+                            android:id="@+id/winner_icon"
+                            android:layout_width="@dimen/margin20"
+                            android:layout_height="@dimen/margin20"
+                            android:src="@drawable/winners" />
+
+                        <TextView
+                            android:id="@+id/winners"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin15"
+                            android:text="Winners"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/heading_text" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/create_view"
+                        android:layout_width="@dimen/margin5"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_color"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/creat_post_lay1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin35"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding15">
+
+                        <ImageView
+                            android:id="@+id/creat_post_icon1"
+                            android:layout_width="@dimen/margin20"
+                            android:layout_height="@dimen/margin20"
+                            android:src="@drawable/shop" />
+
+                        <TextView
+                            android:id="@+id/creat_post1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin15"
+                            android:text="View Store"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/heading_text" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/pref_view"
+                        android:layout_width="@dimen/margin5"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_color"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/prefrence_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin35"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding15">
+
+                        <ImageView
+                            android:id="@+id/prefrence_icon"
+                            android:layout_width="@dimen/margin20"
+                            android:layout_height="@dimen/margin20"
+                            android:src="@drawable/preferences" />
+
+                        <TextView
+                            android:id="@+id/prefrence"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin15"
+                            android:text="Settings"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/heading_text" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/about_view"
+                        android:layout_width="@dimen/margin5"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_color"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/about_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin35"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding15">
+
+                        <ImageView
+                            android:id="@+id/about_icon"
+                            android:layout_width="@dimen/margin20"
+                            android:layout_height="@dimen/margin20"
+                            android:src="@drawable/about" />
+
+                        <TextView
+                            android:id="@+id/about"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin15"
+                            android:text="@string/content_about"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/heading_text" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/contact_now"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/support_view"
+                        android:layout_width="@dimen/margin5"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_color"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/margin35"
+                        android:id="@+id/contact_support_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding15">
+
+                        <ImageView
+                            android:id="@+id/contact_support_icon"
+                            android:layout_width="@dimen/margin20"
+                            android:layout_height="@dimen/margin20"
+                            android:src="@drawable/contact" />
+
+                        <TextView
+                            android:id="@+id/contact_support"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin15"
+                            android:text="Contact Support"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/heading_text" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/margin35"
+                    android:id="@+id/logout_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding15">
+
+                    <ImageView
+                        android:id="@+id/logout_icon"
+                        android:layout_width="@dimen/margin20"
+                        android:layout_height="@dimen/margin20"
+                        android:src="@drawable/logout" />
+
+                    <TextView
+                        android:id="@+id/logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin15"
+                        android:text="Log Out"
+                        android:textColor="@color/red_color"
+                        android:textSize="@dimen/heading_text" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
+

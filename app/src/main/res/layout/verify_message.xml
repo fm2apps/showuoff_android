@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/margin1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alert_draw"
+        android:orientation="vertical"
+        android:padding="@dimen/padding10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin5"
+            android:gravity="center"
+            android:text="ShowUoff"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/toolbar_text" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:gravity="center"
+            android:text="Some Text Message"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_text" />
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="@dimen/margin100"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/margin15"
+            android:gravity="center"
+            android:padding="@dimen/padding5"
+            android:text="@string/ok"
+            android:textColor="@color/app_color"/>
+
+    </LinearLayout>
+</LinearLayout>

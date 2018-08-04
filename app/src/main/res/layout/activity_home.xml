@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="?attr/actionBarSize"
+    android:paddingTop="?attr/actionBarSize"
+    tools:context="app.shouoff.activity.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color"
+        android:padding="@dimen/margin5"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:background="@drawable/button_back_white_drawable">
+
+            <EditText
+                android:id="@+id/search_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin35"
+                android:background="@null"
+                android:drawableLeft="@drawable/search_gry"
+                android:hint="Search"
+                android:padding="@dimen/padding7"
+                android:singleLine="true"
+                android:textSize="@dimen/small_text" />
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="@dimen/image20"
+                android:layout_height="@dimen/image20"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin10"
+                android:src="@drawable/cancel" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeContainer"
+        android:layout_below="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestscroll_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/main">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ProgressBar
+                    android:id="@+id/home_post_loader"
+                    android:layout_width="@dimen/margin15"
+                    android:layout_height="@dimen/margin15"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin20"
+                    android:id="@+id/error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:gravity="center"
+                    android:text="No Posts Found"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/toolbar_text"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#47101010"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/filter_layout"
+        android:layout_width="@dimen/margin250"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/alert_draw"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/alert_draw"
+            android:orientation="vertical"
+            android:padding="@dimen/padding7">
+
+            <EditText
+                android:id="@+id/search_value"
+                style="@style/edit_text_snd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/alert_draw"
+                android:hint="Username/Nickname"
+                android:padding="@dimen/padding10"
+                android:singleLine="true" />
+
+            <AutoCompleteTextView
+                android:id="@+id/content"
+                style="@style/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin8"
+                android:background="@drawable/alert_draw"
+                android:drawableRight="@drawable/down_arrow"
+                android:dropDownHeight="@dimen/margin100"
+                android:hint="Search By"
+                android:padding="@dimen/padding5"
+                android:theme="@style/Autocomplete" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding10"
+                android:text="OR"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/heading_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/from_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin3"
+                    android:layout_weight="1"
+                    android:background="@drawable/alert_draw"
+                    android:gravity="center"
+                    android:hint="From"
+                    android:padding="@dimen/padding10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/heading_text" />
+
+                <TextView
+                    android:id="@+id/to_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin3"
+                    android:layout_weight="1"
+                    android:background="@drawable/alert_draw"
+                    android:gravity="center"
+                    android:hint="To"
+                    android:padding="@dimen/padding10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/heading_text" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin15"
+                android:background="@drawable/alert_draw_blue"
+                android:gravity="center"
+                android:padding="@dimen/padding10"
+                android:text="Filter"
+                android:textColor="@color/white"
+                android:textSize="@dimen/heading_text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
